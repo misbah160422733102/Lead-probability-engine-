@@ -8,7 +8,7 @@ st.title("🧪 3D In-Vitro Lead Generation Dashboard")
 st.write("AI-assisted prioritization of high-intent scientific decision makers")
 
 # Load data
-df = pd.read_csv("C:/Users/misbah uddin/OneDrive/Desktop/lead probability engine/lead.csv")
+df = pd.read_csv("C:\Users\misbah uddin\OneDrive\Desktop\lead probability engine\lead.csv")
 df["Probability"] = df.apply(calculate_score, axis=1)
 
 # Ranking
@@ -37,4 +37,5 @@ st.download_button(
     csv,
     "ranked_leads.csv",
     "text/csv"
+
 )
