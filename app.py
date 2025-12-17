@@ -8,7 +8,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Construct path to CSV file
-csv_path = os.path.join(BASE_DIR, "lead.csv")
+csv_path = os.path.join(BASE_DIR, "dataset.csv")
 
 # Load CSV
 try:
@@ -27,3 +27,4 @@ st.dataframe(df)
 # Example: Show summary
 st.write("Summary statistics:")
 st.write(df.describe())
+
